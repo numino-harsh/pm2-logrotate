@@ -5,7 +5,7 @@ PM2 module to automatically rotate logs of processes managed by PM2.
 
 ## Install
 
-    pm2 install pm2-logrotate
+    pm2 install pm2-logrotate-legacy-am
 
 **NOTE:** the command is `pm2 install` NOT `npm install`
 
@@ -36,9 +36,9 @@ We are using [node-schedule](https://github.com/node-schedule/node-schedule) to 
 ### How to set these values ?
 
  After having installed the module you have to type :
-`pm2 set pm2-logrotate:<param> <value>`
+`pm2 set pm2-logrotate-legacy-am:<param> <value>`
 
 e.g:
-- `pm2 set pm2-logrotate:max_size 1K` (1KB)
-- `pm2 set pm2-logrotate:compress true` (compress logs when rotated)
-- `pm2 set pm2-logrotate:rotateInterval '*/1 * * * *'` (force rotate every minute)
+- `pm2 set pm2-logrotate-legacy-am:max_size 1K` (1KB)
+- `pm2 set pm2-logrotate-legacy-am:compress true` (compress logs when rotated)
+- `pm2 set pm2-logrotate-legacy-am:rotateInterval '*/1 * * * *'` (force rotate every minute)
